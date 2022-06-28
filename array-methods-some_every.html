@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ages=[10,20,18,27,14];
+        document.write(ages);
+        document.write("<br> check the all values that are given in array is greter than 18 or not?");//use the some function to check the values
+        //Check if any of the elements in the array pass a test
+        
+        var b =ages.some(check);
+        document.write("<br>"+b);
+        
+        function check(age){
+            return age>=18;
+
+        }
+        document.write("<br> check the all values that are given in array is mast be greter than 18 or equal to 18")// for this we use every function.
+        var b =ages.every(checkin );// it check all the values
+        document.write("<br>"+b);
+        
+        function checkin(agee){
+            return agee>=18;
+        }
+
+    </script>
+</body>
+</html>

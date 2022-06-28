@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ages=[10,20,18,27,14];
+        document.write(ages);
+        document.write("<br> show the value that are given in array is greter than 18 or not?");
+        //find method returns the value of the first elements in an array that pass a test 
+       
+        
+        var b =ages.find(check);
+        document.write("<br>"+b);
+        
+        function check(age){
+            return age>=18;
+
+        }
+        document.write("<br> show the index  that are given in array is greter than 18 or not?");
+         // find it retuen the value 
+        //findindex method returns the index of the first elements in an array that pass a test
+         
+        var b =ages.findIndex(checks);
+        document.write("<br>"+b);
+        
+        function checks(agee){
+            return agee>=18;
+
+        }
+    </script>
+</body>
+</html>
