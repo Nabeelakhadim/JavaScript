@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = {
+
+            firstname: 'jawad',
+            lastname : 'hussain',
+            age      : 20 ,
+            email    : 'jawad@gmail.com',
+            Array    : [1,2,3],
+            living   : {
+                'city': 'badin',
+                'country': 'pakistan'
+            },
+            salary    : function(){
+                return 25000
+            },
+            fullname : function(){
+                return this.firstname + " "+ this.lastname
+            }
+        }
+
+        //document.write(a);
+        console.log(a);
+        document.write(a.firstname);
+        document.write("<br>"+a.lastname);
+        document.write("<br>"+a.age);
+        document.write("<br>"+a.email);
+        document.write("<br>"+a.Array);
+        document.write("<br>"+a.salary());
+        document.write("<br>"+a.fullname());
+        document.write("<br>"+a.living.city);
+        document.write("<br>"+a.living.country);
+    </script>
+</body>
+</html>
