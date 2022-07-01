@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = "77";// this is no a number it is string
+        document.write("print the value of a "+(a+10));
+        var num=Number(a);// number method convert string into number.
+        document.write("<br>"+ (num +10));
+        var b= 10.2678;
+        document.write("<br>print the value of b : "+b);
+        var num1=parseInt(b);
+        document.write("<br> print value of B without decimal number : "+num1);
+        var num2=parseFloat(b);
+        document.write("<br> print value of B with decimal number : "+num2);
+        var num3=isFinite(b);
+        document.write("<br> given  value of B is Finite or not Finite? T/F  : "+num3);
+        var num4=Number.isInteger(b);
+        document.write("<br> given  value of B is Integer or not  T/F  : "+num4);
+        var num5=b.toFixed(2);
+        document.write("<br> print only two value after the decimal number . : "+num5);
+        var num6=b.toPrecision(3);
+        document.write("<br> print only two value after the decimal number . : "+num6);
+
+
+
+
+
+    </script>
+</body>
+</html>
